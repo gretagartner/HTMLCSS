@@ -1,0 +1,36 @@
+#settings-panel {
+  width: 400px;
+  background-color: black;
+  color: pink;
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.setting a {
+  color: white;
+  background-color: black;
+}
+
+a:active {
+  color: lightblue;  /*This went on all buttons, not just first button*/
+}
+
+.setting a:hover {
+  background-color: lightblue;
+}
+
+.setting a:focus {
+  outline: 4px solid turquoise; /*This went only on the link button not the toggle button*/
+}
+
+a[target="_blank"]::after {
+  content: ' 🗗';
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+    }
+
