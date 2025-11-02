@@ -1,0 +1,119 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(189,189,189);
+    --border-color: purple;
+    --header-color: black;
+}
+
+body {
+    background-color:rgb(189,189,189);
+}
+
+a:link { 
+    color: black;
+} 
+
+a:visited {
+    color: Blue;
+} 
+a:hover {
+    color: rgb(230,242,255);
+    position: relative;
+    left: .3rem;
+    right: .3rem;
+    border:  rgb(255,179,255) solid;
+} 
+
+a {
+    font-size: 25px;
+    border: pink solid;
+    background-color: pink;
+    box-shadow: 2px 2px 5px 0 rgba(49, 49, 49, 0.836);
+    margin: 5px;
+}
+
+#index {
+    font-family: Cambria;
+    font-size: 20px;
+    border: solid purple;
+    background-color: lavender;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60%;
+    padding: 15px; 
+    box-shadow: 4px 4px 6px 0 rgba(49, 49, 49, 0.836);
+}
+
+#index:hover {
+    position: relative;
+    top: .3rem;
+    bottom: .3rem;
+    background-color: rgb(170,153,255);
+}
+
+#contact {
+    font-family: Cambria;
+    font-size: 20px;
+    border: solid purple;
+    background-color: lavender;
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    padding: 10px; 
+} 
+
+#contact:hover {
+    position: relative;
+    top: .3rem;
+    bottom: .3rem;
+    background-color: rgb(170,153,255);
+}
+
+.project {
+    display: block;
+    filter: grayscale(55%);
+    margin: auto;
+    width: 50%;
+}
+
+.project:hover {
+    position: relative;
+    top: .3rem;
+    bottom: .3rem;
+    filter: grayscale(0%);
+    transform: scale(1.20);
+}
+
+#headerone {
+    font-size: 50px;
+    text-align: center;
+}
+
+header {
+    background-image: url(Images/tiny-squares.webp);
+    opacity: 0.5;
+}
+
+.Folder {
+    width: 50%;
+    padding: 40px;
+    margin: 10px;
+    float: center;
+}
+
+#heropicture {
+    margin: auto;
+    width: 50%;
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+    }

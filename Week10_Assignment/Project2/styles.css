@@ -1,0 +1,50 @@
+body {
+    line-height: 2;
+    font-style: Helvetica;
+}
+
+h1 { /*Cats*/
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+h2 { /*Origin*/
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h3 { /*Life with Humans*/
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 20x;
+    text-decoration: underline;
+}
+
+h4 { /*Breeds, Colors, Markings*/
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h5 { /*Key takeaways, related topics, glossary*/
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+blockquote {
+    color: green;
+    font-size: 20px;
+    text-align: center;
+}
