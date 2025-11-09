@@ -1,0 +1,54 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+table {
+    width: 0px;
+    height: 50px;
+    border: thick black dashed;
+    margin: auto;
+    box-shadow: 0 8px 12px green;
+}
+
+td {
+    width: auto;
+    height: auto;
+    border: green solid;
+    text-align: right;
+    padding: 1rem;
+}
+
+th {
+    width: auto;
+    height: auto;
+    border: thin lightgreen dashed;
+    text-align: center;
+    padding: 3rem;
+    margin: auto;
+}
+
+.tablecontainer {
+    width: auto;
+    height: auto;
+    text-align: right;
+    overflow-x: auto;
+    box-shadow: 0 3px 7px rgb(0,255,0);
+}
+
+td:hover {
+    background-color: green;
+}
+
+caption {
+    margin: 1rem;
+    font-size: 50px
+}
+
+@media screen and (max-width:545px) {
+    .tablecontainer {
+        font-size: 20px;
+        padding: 1rem;
+        width: 100%;
+    }
+}
