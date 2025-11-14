@@ -1,0 +1,96 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    border: thick black dashed;
+    margin: auto;
+    box-shadow: 0 8px 12px rgba(77, 0, 128, 0.623);
+}
+
+td {
+    width: auto;
+    height: auto;
+    border: turquoise solid;
+    text-align: right;
+    padding: 5rem;
+}
+
+th {
+    width: auto;
+    height: auto;
+    border: thin teal;
+    text-align: left;
+    padding: 5rem;
+    margin: auto;
+}
+
+.tablecontainer {
+    width: auto;
+    height: auto;
+    text-align: right;
+    overflow-x: auto;
+    box-shadow: 0 8px 12px rgba(77, 0, 128, 0.623);
+}
+
+td:hover {
+    background-color: rgba(88, 86, 214, 0.596);
+    transition: 0.5s ease;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: rgba(125, 219, 203, 0.274);
+}
+
+tfoot {
+    background-color: rgba(0, 0, 255, 0.466);
+    font-weight: 900;
+}
+
+thead {
+    background-color:rgba(0, 0, 255, 0.466);
+}
+
+caption {
+    margin: 1rem;
+    font-size: 50px
+}
+
+nav ul {
+    display: flex;
+    background-color: lightblue;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav a {
+    background-color: rgba(255, 0, 242, 0.274);
+    padding: 1rem;
+    margin: auto;
+    border-radius: 15px;
+}
+
+a:hover {
+    color: white;
+    background-color: rgba(255, 0, 242, 0.726);
+    transition: 0.5s ease-in-out;
+}
+
+a:focus {
+    color:white;
+    background-color: rgba(0, 132, 255, 0.726);
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width:545px) {
+    .tablecontainer {
+        font-size: 20px;
+        padding: 1rem;
+        width: 100%;
+    }
+}
