@@ -53,6 +53,7 @@ p::first-letter {
 .pull-quote {grid-area: sidebar;} 
 
 .main-image {
+    grid-row: 4;
     margin: 20rem;
     width: 50%;
 }
@@ -104,9 +105,12 @@ p::first-letter {
             "figure"   
             "sidebar"   
     }
+    body {
+        max-width: auto;
+    }
     .main-image {
-        max-width: 50%;
-        
+        max-width: auto;
+        max-height: auto;
     } 
     .pull-quote {
         max-width: 50%;
