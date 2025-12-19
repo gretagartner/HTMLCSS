@@ -8,21 +8,12 @@
 }
 
 body {
-    background-image: url("Images/books1.jpg");
-    background-repeat: no-repeat; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url("Images/books1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.indexlayout {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "header header image"
-    "main main image"
-}
-.header {grid-area: header;} 
-.content {grid-area: main;} 
 
 @keyframes fadeIn {
   0% {
@@ -40,29 +31,43 @@ body {
 }
 
 header {
-    font-size: 25px;
+    display: flexbox;
+    justify-content: center;
+    font-size: 2rem;
     background-color: rgba(190, 181, 173, 0.906);
     color: black;
-    border: black solid;
+    border: inset black;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-shadow: 1px 1px white;
     margin: 3rem;
-    padding: 4rem;
+    padding: 3rem;
     height: 3rem;
     width: auto;
     text-align: center;
-    box-shadow: rgba(103, 152, 201, 0.548) 8px 8px 20px; 
+    box-shadow: rgba(0, 0, 0, 0.719) 8px 8px 20px; 
 }
+
+@media (max-width: 1388px) {
+    header {
+        font-size: 1rem;
+    }
+
+}
+
 nav a {
     display: flex;
-    font-size: 25px;
+    justify-content: center;
+    background-color:  rgba(190, 181, 173, 0.906);;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     color: black;
     border-radius: 5px;
-    border-width: 1.5px;
+    border-width: 1px;
     text-shadow: none;
     background-color: none;
+    width: 7rem;
 }
 a:link { 
     color: rgb(205, 206, 142);
@@ -86,12 +91,57 @@ a:focus {
     color: #1b1701;
 }
 
+@media (max-width: 600px) {
+body {
+    background-image: url("Images/books1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    }
+}   
+.indexlayout {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header nav nav"
+    "main image image"
+}
+.header {grid-area: header;} 
+.content {grid-area: main;} 
+.nav {grid-area: nav;}
+.image {grid-area: image;}
+
+picture {
+    margin: 1rem;
+}
+
+@media (min-width: 930px) {
+.indexlayout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat (2, auto);
+  grid-template-areas: 
+   "header nav"
+   "main image"
+    }
+}
+
 .content {
     background: rgba(102, 168, 189, 0.918);
-    border: black solid;
+    border: outset black;
+    box-shadow: rgba(235, 83, 227, 0.726) 1px 1px 3px;
     font-size: 25px;
-    margin: 2rem 5rem 5rem 2rem;
+    margin: 0.5rem 5rem 5rem 2rem;
     padding: 1.5rem;
+}
+
+
+@media (max-width: 500px) {
+    .content {
+        font-size: 1rem;
+    }
 }
 
 .books {
@@ -101,6 +151,7 @@ a:focus {
    grid-template-columns: 300px 300px 300px;
    grid-template-rows: 200px 200px 200px;
    gap: 6rem;
+   padding: 2rem;
    font-size: 17px;
    margin: -14rem 2rem 4rem 2rem;
 }
@@ -111,12 +162,13 @@ a:focus {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-    "sheader header header"
-    "sidebar main main"
+    "header header header"
+    "sidebar nav main"
 }
 .header {grid-area: header;} 
 .books {grid-area: main;}
 .prices {grid-area: sidebar;} 
+.nav {grid-area: nav;} 
 
 .prices {
     display: flex;
@@ -129,6 +181,7 @@ a:focus {
 ul {
       list-style-type: none;
       background-color: rgb(31, 31, 30);
+      box-shadow: rgba(235, 83, 227, 0.726) 1px 1px 3px;
     }
 
 li::before {
@@ -137,6 +190,9 @@ li::before {
    } 
 
 .genre {
+   font-size: 1rem;
+   border: inset black;
+   box-shadow: rgba(235, 83, 227, 0.726) 1px 1px 3px; 
    border-radius: 10px;
    padding: 0.5rem;
    height: auto;
@@ -161,15 +217,29 @@ li::before {
 }
 
 .contact {
-    font-size: 30px;
+    color: rgb(252, 253, 252);
+    text-shadow: 2px 2px black;
+    font-size: 2rem;
     margin: 3rem;
     margin-top: -50px;
+}
+
+@media (max-width: 628px) {
+    .contact {
+        font-size: 1.5rem;
+    }
+}
+
+.contact:hover {
+    text-shadow: none;
 }
 .form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.623);
+  box-shadow: rgba(216, 107, 216, 0.904) 2px 2px 3px;
+  text-shadow: none;
   width: 12rem;
   color: black;
   font-size: 20px;
@@ -179,19 +249,20 @@ li::before {
 }
 
 .contactlayout {
+    width: 100%;
     display: grid;
-    gap: 10px;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
+    gap: 20px;
+    grid-template-columns: repeat (3, auto);
     grid-template-areas: 
-    "header header image"
-    "main main image"
-    "footer footer footer"
+    "header header nav"
+    "main main main"
+    "footer footer footer" 
 }
 .header {grid-area: header;} 
 .contact {grid-area: main;}
 .image {grid-area: image;}
 .footer {grid-area: footer;}
+.nav {grid-area: nav;}
 
 footer {
     color: white;
